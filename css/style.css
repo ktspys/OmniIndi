@@ -1,0 +1,45 @@
+body
+{
+    background-color: black;
+}
+.full-screen
+{
+    height: 100vh;  
+}
+
+.node
+{
+    height: 3em;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor:pointer;
+    font-size: 1.2em;
+}
+
+#curve-layer
+{
+    position: absolute;
+
+}
+
+path
+{
+    stroke-width: 0;
+    stroke: white;
+}
+
+.path {
+    stroke-width: 2;
+    stroke-dasharray: 10;
+    stroke-dashoffset: 100;
+    animation: dash 1s linear forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
