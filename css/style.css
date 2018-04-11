@@ -10,12 +10,23 @@ body
 .node
 {
     height: 3em;
-    padding-top: 0.8em;
+    padding-top: 0.3em;
     color: white;
     margin-bottom: 10px;
     text-align: center;
     cursor:pointer;
-    font-size: 1.2em;
+    font-size: 1em;
+}
+
+.node-start
+{
+    height: 1.6em;
+    padding-top: 0.3em;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor:pointer;
+    font-size: 1em;
 }
 
 #curve-layer
@@ -31,7 +42,7 @@ path
 }
 
 .path {
-    stroke-width: 2;
+    stroke-width: 1;
     stroke-dasharray: 10;
     stroke-dashoffset: 100;
     animation: dash 1s linear forwards;
@@ -44,3 +55,30 @@ path
     }
   }
 
+  .level-0
+  {
+      max-height: 100vh;
+  }
+
+
+  .level-2 div
+  {
+          /* border: 1px solid white;
+      padding: 10px;
+      display: inline; */
+      background-image: url(logo.gif);
+      background-size: cover;
+      height: 200px;
+      width: 200px;
+  }
+
+  .active
+  {
+      background-color: white;
+      color: black;
+  }
+
+  .level-1 div, .level-2 div, .level-3 div, .level-4 div, .level-5 div
+  {
+      margin-bottom: 1em;
+  }
